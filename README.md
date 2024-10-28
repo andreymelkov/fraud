@@ -15,5 +15,6 @@ HTTPS clone URL: git clone https://github.com/andreymelkov/fraud.git
 - в файле nginx/api.conf указать свой server_name. Если не указывать server_name и не подменять SSL, то сервис будет доступен по адресу https://localhost:8743
 
 ### 4. Запустить докер контейнер
-Из папки клона проекта в командной строке: ==make build-all==
+Из папки клона проекта в командной строке: `make build-all`
+
 Сервис докер должен быть запущен
