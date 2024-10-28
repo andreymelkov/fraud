@@ -7,8 +7,9 @@
 
 ### 2. Скачать репозиторий
 
-SSH clone URL: git clone git@github.com:andreymelkov/fraud.git
-HTTPS clone URL: git clone https://github.com/andreymelkov/fraud.git
+SSH clone URL: `git clone git@github.com:andreymelkov/fraud.git`
+
+HTTPS clone URL: `git clone https://github.com/andreymelkov/fraud.git`
 
 ### 3. Настроить NGINX в репозитории
 - в папку ssl добавить файлы SSL сертификатов (ключа и цепочки сертификатов)
