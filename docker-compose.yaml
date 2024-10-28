@@ -1,0 +1,24 @@
+services:
+  nginx:
+    image: nginx:1.25.4
+    container_name: nginx-fd
+    restart: unless-stopped
+    ports:
+      - "8743:80"
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+      - ./logs/nginx:/var/log/nginx
+      - ./ssl:/etc/ssl
+    networks:
+      - fraud_api_network
+
+  fraud-detection:
+    image: voklem/fraud_detection
+    restart: unless-stopped
+    container_name: fraud-detection-api
+    networks:
+      - fraud_api_network
+
+networks:
+  fraud_api_network:
+    driver: bridge
